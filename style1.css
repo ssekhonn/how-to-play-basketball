@@ -1,0 +1,21 @@
+.container {  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "top . ."
+      "main . ."
+      "bottom . .";
+  }
+  
+  .top { grid-area: top;
+   background-color: rgba(243, 236, 238, 0.548);
+   text-align: center; }
+  
+  .main { grid-area: main;
+ }
+  
+  .bottom { grid-area: bottom;
+  text-align: center; }
+  
