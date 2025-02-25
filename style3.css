@@ -8,7 +8,8 @@ body {
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;
-    background-color: #99ffcc;
+    background-color: #7e5b2d;
+    color: white;
 }
 
 .columns {
@@ -21,8 +22,9 @@ body {
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;
-    background-color: #ccffcc;
+    background-color: #4e574e;
     flex: 1;
+    color: black;
 }
 nav ul {
     list-style: none;
