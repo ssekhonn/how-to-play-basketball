@@ -2,25 +2,45 @@ body {
   text-align: center;
   background-color: #f0f0f0;
   color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.top, .main, .bottom {
+/* Using Grid for the Main Layout */
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Top Section (Header) */
+.top {
+  background-color: #837b7b;
   padding: 20px;
   margin: 10px;
   border: 1px solid #ccc;
 }
 
-.top {
-  background-color: #837b7b;
-}
-
+/* Main Content Section */
 .main {
   background-color: #bb925c;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
 }
 
+/* Bottom Section (Footer) */
 .bottom {
   background-color: #968e8e;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
 }
+
+/* Navigation Styling */
 nav ul {
   list-style: none;
   display: flex;
@@ -41,3 +61,4 @@ nav ul li a.active {
   font-weight: bold;
   text-decoration: underline;
 }
+

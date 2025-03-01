@@ -1,57 +1,62 @@
 body {
-    text-align: center;
-    background-color: #e8e8e8;
-    color: #555;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .top {
-    padding: 40px; /* Increase padding */
-    margin: 10px;
-    border: 1px solid #ccc;
-    background-color: #757068;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li a.active {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .box {
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    background-color: #a8823b;
-    flex: 1 1 calc(50% - 40px); /* Flexible items that take up half the width, minus margins */
-    box-sizing: border-box;
-  }
-  
-  h3 {
-    margin-bottom: 10px;
-  }
-  
+  text-align: center;
+  background-color: #e8e8e8;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the top section (header) */
+.top {
+  padding: 40px; /* Increase padding */
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #757068;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Using CSS Grid for Main Content */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for individual content boxes */
+.box {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #a8823b;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+/* Adjusting headers */
+h3 {
+  margin-bottom: 10px;
+}
+
